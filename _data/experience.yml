@@ -1,0 +1,43 @@
+intro:
+  Wow whatte waaw
+
+  
+  But of course second paragraph
+
+posts:
+  - title: This is awesome
+    title_url: google.com
+    img:
+      alt: hello
+      url: assets/img/profile_3_2.jpg
+    authors:
+      - self: true
+      - name: Sidd Th
+        url: googlecommm
+      - name: Third Guy
+        url: Hello
+    intro: 
+      This amazing intro.
+  - title: This is awesome
+    title_url: google.com
+    img:
+      alt: whatte wow
+      url: nonono
+    authors:
+      - self: true
+      - name: Sidd Th
+        url: googlecommm
+      - name: Third Guy
+        url: http://This
+    intro: 
+      This amazing intro.
+
+      
+      which also has two paragraphs.
+    links:
+      - name: bio
+        url: http://biourl.html
+      - name: hell
+        url: http://ouch.html
+    publication:
+      <em>This Journal</em>, But this is 2015

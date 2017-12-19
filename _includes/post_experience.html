@@ -1,0 +1,29 @@
+<tr>
+  <td width="25%"><img src="{{ post.img.url }}" alt="{{ post.img.alt }}" width="100%"></td>
+  <td width="75%" valign="top">
+  <p>
+  <a href="{{ post.title_url }}">
+    <papertitle>{{ post.title }}</papertitle>
+    </a>
+    <br>
+      {% if post.authors %}
+        {% for author in post.authors %}
+          {% if author.self %}<strong>{{ site.data.main.name }}</strong>{% else %}<a href="{{ author.url }}">{{ author.name }}</a>{% endif %}{% if forloop.last != true %},{% endif %}
+        {% endfor %}
+        <br>
+      {% endif %}
+      {% if post.publication %}
+        {{ post.publication }}
+        <br>
+      {% endif %}
+      {% if post.links %}
+        {% for link in post.links %}
+          <a href="{{ link.url }}">{{ link.name }}</a>{% if forloop.last != true %} / {% endif %}
+        {% endfor %}
+        <br>
+      {% endif %}
+  </p>
+  {{ post.intro | markdownify }}
+  <br>
+  </td>
+</tr>

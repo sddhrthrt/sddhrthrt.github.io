@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+    <td width="67%" valign="middle">
+    <p align="center">
+      <name>{{ site.data.main.name }}</name>
+    </p>
+    {{ site.data.main.intro | markdownify }}
+    <p align=center>
+    <a href="mailto:{{ site.data.main.email }}">Email</a> &nbsp;/&nbsp;
+      <a href="resume.pdf">Resume</a> &nbsp;/&nbsp;
+      <!--<a href="bio.txt">Biography</a> &nbsp;/&nbsp;-->
+      <!--<a href="thesis.pdf">Thesis</a> &nbsp;/&nbsp;-->
+      <a href="{{ site.data.main.scholar }}">Google Scholar</a> &nbsp;/&nbsp;
+      <a href="{{ site.data.main.linkedin }}"> LinkedIn </a>
+    </p>
+    </td>
+    <td width="33%">
+      <img width="100%" src="{{ site.data.main.profile_pic }}">
+    </td>
+  </tr>
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+    <td width="100%" valign="middle">
+      <heading>Research</heading>
+      {{ site.data.research.intro | markdownify }}
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  {% for post in site.data.research.posts %}
+    {% include post_research.html post=post %}
+  {% endfor %}
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+    <td width="100%" valign="middle">
+      <heading>Experience</heading>
+      {{ site.data.experience.intro | markdownify }}
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  {% for post in site.data.experience.posts %}
+    {% include post_experience.html post=post %}
+  {% endfor %}
+</table>

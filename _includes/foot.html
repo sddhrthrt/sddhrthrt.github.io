@@ -23,6 +23,8 @@ var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "htt
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {% if jekyll.environment == "cs.toronto" %}
 {% assign gtag = 'UA-36548793-6' %}
+{% elsif jekyll.environment == "development" %}
+{% assign gtag = 'INVALID' %}
 {% else %}
 {% assign gtag = 'UA-36548793-5' %}
 {% endif %}

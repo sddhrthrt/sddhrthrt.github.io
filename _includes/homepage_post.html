@@ -2,9 +2,9 @@
   <td width="25%"><img src="{{ post.img.url }}" alt="{{ post.img.alt }}" width="100%"></td>
   <td width="75%" valign="top">
   <p>
-  <a href="{{ post.title_url }}">
+    {% if post.url %}<a href="{{ post.url }}">{% endif %}
     <papertitle>{{ post.title }}</papertitle>
-    </a>
+    {% if post.url %}</a>{% endif %}
     <br>
       {% if post.authors %}
         {% for author in post.authors %}

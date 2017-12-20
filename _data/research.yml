@@ -6,7 +6,7 @@ intro:
 
 posts:
   - title: This is awesome
-    title_url: google.com
+    url: http://google.com
     img:
       alt: hello
       url: assets/img/profile_3_2.jpg
@@ -19,7 +19,6 @@ posts:
     intro: 
       This amazing intro.
   - title: This is awesome
-    title_url: google.com
     img:
       alt: whatte wow
       url: nonono

@@ -1,7 +1,7 @@
 ---
 title: This is awesome
 type: research
-layout: default
+layout: post 
 img:
   alt: hello
   url: assets/img/profile_3_2.jpg

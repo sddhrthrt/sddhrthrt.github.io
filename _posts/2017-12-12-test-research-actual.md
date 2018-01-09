@@ -1,6 +1,6 @@
 ---
 title: This is a test post
-layout: default
+layout: post
 img:
   alt: hello
   url: assets/img/profile_3_2.jpg

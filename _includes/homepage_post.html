@@ -1,5 +1,5 @@
 <tr>
-  <td width="25%"><img src="{{ post.img.url }}" alt="{{ post.img.alt }}" width="100%"></td>
+  <td width="25%"><img src="{{ post.img.url | relative_url }}" alt="{{ post.img.alt }}" width="100%"></td>
   <td width="75%" valign="top">
   <p>
     {% if post.url %}<a href="{{ post.url }}">{% endif %}
@@ -18,7 +18,11 @@
       {% endif %}
       {% if post.links %}
         {% for link in post.links %}
-          <a href="{{ link.url }}">{{ link.name }}</a>{% if forloop.last != true %} / {% endif %}
+          {% if link.relative %}
+            <a href="{{ link.url | relative_url }}">{{ link.name }}</a>{% if forloop.last != true %} / {% endif %}
+          {% else %}
+            <a href="{{ link.url }}">{{ link.name }}</a>{% if forloop.last != true %} / {% endif %}
+          {% endif %}
         {% endfor %}
         <br>
       {% endif %}

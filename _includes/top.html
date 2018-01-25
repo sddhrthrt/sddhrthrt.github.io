@@ -7,9 +7,9 @@
     </p>
     {{ site.data.main.intro | markdownify }}
     {% endif %}
-    <p><!-- align=center>-->
+    <p align=center>
       <a href="mailto:{{ site.data.main.email }}">Email</a> &nbsp;/&nbsp;
-      <a href="resume.pdf">Resume</a> &nbsp;/&nbsp;
+      <a href="{{ site.data.main.resume_file  | relative_url}}">Resume</a> &nbsp;/&nbsp;
       <!--<a href="bio.txt">Biography</a> &nbsp;/&nbsp;-->
       <!--<a href="thesis.pdf">Thesis</a> &nbsp;/&nbsp;-->
       <a href="{{ site.data.main.scholar }}">Google Scholar</a> &nbsp;/&nbsp;
@@ -18,7 +18,7 @@
     </td>
     {% if intro %}
     <td width="33%">
-       <img width="100%" src="{{ site.data.main.profile_pic }}">
+       <img width="100%" src="{{ site.data.main.profile_pic | relative_url }}">
     </td>
     {% endif %}
   </tr>

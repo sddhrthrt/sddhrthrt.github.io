@@ -1,11 +1,21 @@
-title: Siddhartha Thota
+title: Sid's Personal Website
 name: Siddhartha Thota
+
 intro: 
-  This is just me being awesome.
+
+  Hello! I'm Sid. I am a graduate student at the University of Toronto.  I am
+  expecting to graduate from the <a
+  href="http://web.cs.toronto.edu/Graduate/prospective_gradwhy/mscac.htm">MScAC</a>
+  program in December 2018. I am interested in applications of Machine Learning
+  and building massive ML applications.  
 
 
-  My entire life is awesome.
+  I am in the market for an 8-month applied research internship from May 2018. 
+  
+
+
 email: thota@cs.toronto.edu
 scholar: https://scholar.google.co.in/citations?user=_xgEvqQAAAAJ&hl=en
 linkedin: https://www.linkedin.com/in/sddhrthrt/
 profile_pic: /assets/img/profile_circle.jpg
+resume_file: /assets/files/resume.pdf

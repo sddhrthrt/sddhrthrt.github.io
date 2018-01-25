@@ -1,3 +1,20 @@
+  {% if jekyll.environment == "cs.toronto" %}
+  {% assign gtag = 'UA-36548793-6' %}
+  {% elsif jekyll.environment == "development" %}
+  {% assign gtag = 'INVALID' %}
+  {% else %}
+  {% assign gtag = 'UA-36548793-5' %}
+  {% endif %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=gtag"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ gtag }}');
+  </script>
+
   <meta name=viewport content=“width=800”>
   <meta charset="utf-8" /> 
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">

@@ -69,3 +69,25 @@ posts:
         url: http://ieeexplore.ieee.org/document/6618238/ 
   #     publication:
   #       <em>This Journal</em>, But this is 2015
+  - title: Call center call analysis for emotion-based cues
+    img:
+      alt: call center dude
+      url: /assets/img/steeve.jpg
+
+    intro:
+      As my undergraduate project, I worked on call center call recordings. Working on a 
+      hypothesis that a call center complaint call usually goes from a "conflict" to a "resolution" 
+      (or not), I manually labeled several hundred hours of call center calls with binary tags
+      and tried to train a HMM model. The takeaways from this project were insight into 
+      variabilities in real-world data, how to extract features (MFCC, FFT and other signal features) 
+      and working with noisy data. I also learnt a whole lot about how to take an unlabeld dataset
+      and go to something that resembeled an annotated dataset. Details of this project remain 
+      fairly confidential because of the nature of the dataset we worked on. 
+    #authors:
+      #- self: true
+    #links:
+      #- name: pdf
+        #url: /assets/files/swara.pdf
+        #relative: true
+      #- name: ieee article
+        #url: http://ieeexplore.ieee.org/document/6618238/ 

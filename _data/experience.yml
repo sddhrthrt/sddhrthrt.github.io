@@ -19,10 +19,15 @@ posts:
       easily extendable and user-friendly for machine learning consumers. 
 
       - Worked on deploying machine learning algorithms as services for teams inside Adobe.
+
       - Worked with data scientists to understand working of algorithms and the feature transformations for data.
+
       - Adapted learning and testing algorithms to generalize settings and parameters, to make it usable for other teams.
+
       - Created representations of feature transforms and built an ETL framework to consume data from users.
+
       - Designed and built a multi-cloud (AWS, Azure, in-house) service management framework on Azure and AWS.
+
       - Built data pipelines, configuration services and scheduling interfaces for setting up model training.
 
   - title: Marketing Mix Model solver for digital marketing spend optimization
@@ -37,7 +42,9 @@ posts:
       handed over the project to long term maintenance teams and moved on to shipping ML as a service.
       
       - Optimized customer spends using a customized analytical marketing mix model solver.
+
       - Built massive ETL pipelines, provided seasonality and multiple campaign support to customers.
+
       - Gained experience of working in a highly agile, self-motivated research project.
 
 

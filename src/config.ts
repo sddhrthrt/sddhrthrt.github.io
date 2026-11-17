@@ -3,7 +3,7 @@ import type { ThemeConfig } from './types'
 export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
-    website: 'https://sddhrthrt.github.io/', // Site domain
+    website: 'https://employ.chitrakathe.com/', // Site domain
     title: 'Sid Thota', // Site title
     author: 'sddhrthrt', // Author name
     description: 'Sid\'s Portfolio', // Site description

@@ -44,7 +44,7 @@ Check the [demo](https://chiri.the3ash.com/) for more details.
 
 ## Deploy to GitHub Pages
 
-`.github/workflows/deploy.yml` builds the site with [withastro/action](https://github.com/withastro/action) and publishes `dist/` to GitHub Pages on every push to `main`. In the repository settings, set **Pages → Source** to **GitHub Actions**. This repository is a user site (`siddhrthrt.github.io`), so no `base` path is needed.
+`.github/workflows/deploy.yml` builds the site with [withastro/action](https://github.com/withastro/action) and publishes `dist/` to GitHub Pages on every push to `main`. In the repository settings, set **Pages → Source** to **GitHub Actions**. The site is served from the custom domain `employ.chitrakathe.com` (declared in `public/CNAME`), so no `base` path is needed.
 
 ## Commands
 

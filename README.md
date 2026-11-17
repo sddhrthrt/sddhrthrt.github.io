@@ -42,6 +42,10 @@ Check the [demo](https://chiri.the3ash.com/) for more details.
 
 &emsp;[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start) [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new)
 
+## Deploy to GitHub Pages
+
+`.github/workflows/deploy.yml` builds the site with [withastro/action](https://github.com/withastro/action) and publishes `dist/` to GitHub Pages on every push to `main`. In the repository settings, set **Pages → Source** to **GitHub Actions**. This repository is a user site (`siddhrthrt.github.io`), so no `base` path is needed.
+
 ## Commands
 
 - `pnpm new <title>` - Create a new post (use `_title` for drafts)

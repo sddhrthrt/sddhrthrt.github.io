@@ -15,6 +15,7 @@ import LinkCard from '@/components/ui/LinkCard.astro'
 import NeoDBCard from '@/components/ui/NeoDBCard.astro'
 import XPOST from '@/components/ui/XPOST.astro'
 import CopyCode from '@/components/ui/CopyCode.astro'
+import ProfileLinks from '@/components/ui/ProfileLinks.astro'
 import BaseLayout from '@/layouts/BaseLayout.astro'
 
 import { themeConfig } from '@/config'
@@ -44,7 +45,10 @@ const shouldRenderLinkCard = themeConfig.post.linkCard && contentFeatures.hasLin
         <BackButton />
         {shouldRenderToc && <TableOfContents toc={toc} />}
         <div class="title">
-          <h1>{title}</h1>
+          <div class="title-row">
+            <h1>{title}</h1>
+            <ProfileLinks />
+          </div>
           <div class="date">
             <FormattedDate date={pubDate} context="post" />
             {themeConfig.post.readingTime && readingTime && (
@@ -81,5 +85,16 @@ const shouldRenderLinkCard = themeConfig.post.linkCard && contentFeatures.hasLin
 
   .post-container main {
     flex: 1;
+  }
+
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .title-row h1 {
+    min-width: 0;
   }
 </style>

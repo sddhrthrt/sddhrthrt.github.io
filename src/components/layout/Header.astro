@@ -1,12 +1,18 @@
 ---
 import { themeConfig } from '@/config'
 import ThemeToggle from '@/components/ui/ThemeToggle.astro'
+import ProfileLinks from '@/components/ui/ProfileLinks.astro'
 ---
 
 <header>
   <nav>
-    <a href="/">{themeConfig.site.title}</a>
-    {themeConfig.general.themeToggle && <ThemeToggle />}
+    <a href="/" class="site-title">
+      {themeConfig.site.title}
+    </a>
+    <div class="nav-links">
+      <ProfileLinks />
+      {themeConfig.general.themeToggle && <ThemeToggle />}
+    </div>
   </nav>
 </header>
 <style>
@@ -16,9 +22,14 @@ import ThemeToggle from '@/components/ui/ThemeToggle.astro'
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
-  header a {
+  .nav-links {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  header .site-title {
     font-weight: var(--font-weight-bold);
     color: var(--text-primary);
     text-decoration: none;
